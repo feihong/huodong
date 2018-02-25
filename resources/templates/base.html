@@ -6,49 +6,16 @@
     <title>Welcome to huodong</title>
 
     <!-- styles -->
-    {% style "/assets/bootstrap/css/bootstrap.min.css" %}
-    {% style "/assets/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css" %}
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet">
     {% style "/css/screen.css" %}
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-      <!-- navbar -->
-      <nav class="navbar navbar-dark bg-primary navbar-expand-md" role="navigation">
-          <button class="navbar-toggler hidden-sm-up"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapsing-navbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="{{servlet-context}}/">huodong</a>
-          <div class="collapse navbar-collapse" id="collapsing-navbar">
-              <ul class="nav navbar-nav">
-                  <li class="nav-item">
-                      <a href="{{servlet-context}}/"
-                         class="nav-link{% ifequal page "home.html" %} active{%endifequal%}">
-                      home
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="{{servlet-context}}/about"
-                         class="nav-link{% ifequal page "about.html" %} active{%endifequal%}">
-                      about
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
-
     <div class="container">
       {% block content %}
       {% endblock %}
     </div>
-
-    <!-- scripts -->
-    {% script "/assets/jquery/jquery.min.js" %}
-    {% script "/assets/font-awesome/svg-with-js/js/fontawesome.min.js" %}
-    {% script "/assets/tether/dist/js/tether.min.js" %}
-    {% script "/assets/bootstrap/js/bootstrap.min.js" %}
 
     <script type="text/javascript">
       var context = "{{servlet-context}}";
