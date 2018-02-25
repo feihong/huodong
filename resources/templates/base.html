@@ -12,10 +12,29 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-    <div class="container">
-      {% block content %}
-      {% endblock %}
-    </div>
+    <!-- <nav class="level">
+      <p class="level-item has-text-centered">
+        <a href="{{servlet-context}}/" style="font-size: 2rem">活动</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info" href="{{servlet-context}}/events">Events</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Movies</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Restaurants</a>
+      </p>
+      <p class="level-item has-text-centered">
+        <a class="link is-info">Tools</a>
+      </p>
+    </nav> -->
+    <section class="section">
+      <div class="container">
+        {% block content %}
+        {% endblock %}      
+      </div>
+    </section>
 
     <script type="text/javascript">
       var context = "{{servlet-context}}";
