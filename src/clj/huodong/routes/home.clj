@@ -5,8 +5,10 @@
             [clojure.java.io :as io]))
 
 (defn home-page []
-  (layout/render
-    "home.html" {:docs (-> "docs/docs.md" io/resource slurp)}))
+  (layout/render "home.html"))
+
+(defn login-page []
+  (layout/render "login.html"))
 
 (defn about-page []
   (layout/render "about.html"))
@@ -16,5 +18,6 @@
 
 (defroutes home-routes
   (GET "/" [] (home-page))
+  (GET "/login" [] (login-page))
   (GET "/about" [] (about-page))
   (GET "/events" [] (events-page)))
