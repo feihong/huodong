@@ -14,10 +14,53 @@
     <nav class="navbar has-shadow">
       <div class="navbar-brand">
         <a class="navbar-item">
-          <img src="{{servlet-context}}/img/logo.svg">          
+          <img src="{{servlet-context}}/img/logo.svg">
+        </a>
+        <div class="navbar-burger">
+          <span></span><span></span><span></span>
+        </div>
       </div>
 
       <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>Event discovery</small>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item">Events</a>
+          <a class="navbar-item">Restaurants</a>
+          <a class="navbar-item">Movies</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">Tools</div>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="{{servlet-context}}/login">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-archive"></i>
+                  </span>
+                  Cache
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-coffee"></i>
+                  </span>
+                  API Docs
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out-alt"></i>
+                  </span>
+                  Log Out
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
