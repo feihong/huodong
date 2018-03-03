@@ -11,23 +11,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-    <!-- <nav class="level">
-      <p class="level-item has-text-centered">
-        <a href="{{servlet-context}}/" style="font-size: 2rem">活动</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info" href="{{servlet-context}}/events">Events</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info">Movies</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info">Restaurants</a>
-      </p>
-      <p class="level-item has-text-centered">
-        <a class="link is-info">Tools</a>
-      </p>
-    </nav> -->
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="{{servlet-context}}/img/logo.svg">          
+      </div>
+
+      <div class="navbar-menu">
+      </div>
+    </nav>
+
     <section class="section">
       <div class="container">
         {% block content %}
